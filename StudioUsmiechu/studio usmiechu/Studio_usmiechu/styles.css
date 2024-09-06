@@ -1,0 +1,537 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 200vh;
+    background-image: url(images/parralax111.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    list-style: none;
+    height: auto; 
+    padding: 10px;
+    background: linear-gradient(rgba(255,255,255,1) 25%, rgba(189,189,189,1) 100%);
+    font-family: 'Rubik', sans-serif;
+    font-size: x-large;
+}
+
+nav span {
+    color: #000000;
+    margin-left: 3vh;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar-links{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+nav a:last-child img {
+    max-height: 5vh;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.menu-toggle {
+    display: none;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #000;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+.menu-toggle span {
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    top: 5vh;
+    overflow: hidden;
+}
+
+.header img {
+    position: absolute; 
+    z-index: 0; 
+    opacity: 0.8; 
+    width: 80%; 
+    max-width: 600px; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.make-smile {
+    width: 100%;
+    max-height: 600px;
+    min-height: 300px;
+    position: relative;
+    padding-left: 10%;
+    margin-top: 5%;
+}
+
+.usmiech {
+    position: absolute;
+    top: 10vh;
+    max-width: 90%;
+}
+
+.about {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.about .foto {
+    background-size: cover; 
+    background-position: left; 
+    width: auto;
+}
+
+.about img {
+    aspect-ratio: 889/621;
+    width:  50%;
+}
+
+.about .description {
+    width: 60%; 
+    padding-left: 5%; 
+    padding-right: 5%;
+    padding-top: 2%;
+    margin-top: 4%;
+    background-color: white;
+}
+
+.about .description p {
+    position: relative;
+    display: flex;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+h3 {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%; 
+    height: 50px; 
+    background: radial-gradient(ellipse at top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 40%);
+}
+
+.about {
+    position: relative;
+}
+
+.sentence::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0px;
+    right: 0;
+    height: 50px; 
+    background: radial-gradient(ellipse at top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%);
+}
+
+.sentence {
+    background-color: white;
+    width: 100%;
+    max-height: 400px;
+    min-height: 250px;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.sentence p {
+    font-family: "Pinyon Script", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+    position: relative;
+    align-items: center;
+    text-align: center; 
+    justify-content: center;
+}
+
+.parralax {
+    background-image: url("images/parralax2.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 80px;
+    background-attachment: fixed;
+    height: 15vh;
+}
+
+.team-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-image: url("images/zespolbg.png");
+    background-repeat: no-repeat;
+}
+
+.team-header {
+    width: 100%;
+    height: auto;
+    background-image: url("images/zespol.png");
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    margin-top: 3%;
+}
+
+.miniatures-container {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap; 
+    background-size: 100%;
+}
+
+.miniatures {
+    shadow:  -18px 9px 70px -2px rgb(0, 0,0); 
+}
+
+.box-block {
+    display: grid;
+    width: 26%;
+    height: 100%;
+    position: inherit;
+    place-items: center;
+}
+
+.box-block img {
+    max-width: 100%;
+    padding: 10%;
+    transition: transform 0.3s ease;
+}
+
+.button {
+    max-width: 80%!important;
+    position: relative;
+}
+
+.button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.sentence2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    background-color: white;
+}
+
+.sentence2 img {
+    height: 80%;
+    width:  40%;
+}
+
+.sentence2 .description {     
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+
+.sentence2 p {
+    font-family: "Pinyon Script", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+    position: relative;
+    align-items: center;
+    text-align: center; 
+    justify-content: center;
+}
+
+.offer-container {
+    text-align: center; 
+    background-color: white;
+    padding-bottom: 5vh;
+}
+
+.offer-header h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+
+.offer-container .miniatures-container {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    background-image: url("images/bar.jpg");
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+.place-foto {
+    display: flex;
+    position: relative;
+}
+
+.place-foto img {
+    width: 100%;
+}
+
+.cost {
+    text-align: center;
+    padding: 5%;
+    background-image: url("images/zespolbg.png");
+    background-repeat: no-repeat;
+    height: max-content;
+    position: relative;
+}
+
+.cost h1 {
+    padding-top: 5%;
+    padding-bottom: 3%;
+    position: relative;
+    z-index: 1;
+}
+
+.cost h2 {
+    position: relative; 
+    z-index: 1; 
+}
+
+.cost h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 35px;
+    height: 50px;
+    background: radial-gradient(ellipse at top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%);
+    z-index: 1;
+    }
+
+
+.cost p {
+    position: relative;
+    z-index: 1;
+}
+
+.cost p.border {
+    display: inline-block; 
+    border: 2px solid red; 
+    border-radius: 10px; 
+    padding: 5px 10px; 
+    margin: 10px 0; 
+}
+
+
+.tooth {
+    position: absolute; 
+    z-index: 0; 
+    opacity: 0.8; 
+    width: 80%; 
+    max-width: 600px; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-container {
+    background-color: white;
+    max-width: 100%; 
+    margin: 0 auto;
+    text-align: center; 
+    padding: 20px; 
+    font-family: Arial, sans-serif; 
+  }
+  
+  .contact-title {
+    font-size: 24px; 
+    letter-spacing: 2px; 
+    font-weight: bold; 
+    margin-bottom: 20px; 
+  }
+  
+  .contact {
+    padding-top: 20px;;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  }
+  
+  .left, .right {
+    width: 50%; 
+    font-size: 16px;
+    line-height: 1.8; 
+  }
+  
+  .left i {
+    margin-right: 8px; 
+  }
+  
+  .contact span {
+    display: block; 
+    text-align: left; 
+  }
+  
+  .contact .left span {
+    text-align: right;
+  }
+
+  .right {
+    border-left: 2px solid #000;
+    padding-left: 20px; 
+  }
+  
+  .left {
+    padding-right: 20px;;
+  }
+
+.maps {
+    display: flex;
+}
+
+.footer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+}
+
+.footer img {
+    width: 100%;
+}
+
+@media screen and (max-width: 748px)
+{
+    .about img {
+        display: none;
+    }
+
+    .about .description {
+        width: 100%;
+    }
+
+    .team-container{
+        background-color: white;
+        background-image: none;
+    }
+
+    .box-block{
+        position: relative;
+        width: 80%;
+    }
+
+    .sentence2 .description {
+        font-size: xx-large;
+    }
+
+    .sentence2 img {
+        display: none;
+    }
+
+    .offer-container .miniatures-container {
+        background-image: none;
+    }
+
+    .offer-container .miniatures-container .box-block {
+        background-image: url("images/bar.jpg");
+        background-repeat: no-repeat;
+        background-position-y: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    body {
+        font-size: smaller;
+    }
+
+    nav span {
+        display: none;
+    }
+
+    .navbar-links {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9); 
+        padding: 0 20px;
+    }
+
+    .navbar-links.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar-links a {
+        padding: 10px 0;
+        text-align: left;
+        width: 100%;
+        border-top: 1px solid #eee;
+    }
+
+    nav {
+    background-color: transparent;
+    }
+}
+
+    @media (max-width: 880px) {
+
+    .usmiech {
+    right: 5vh;
+    }
+}
+
+.authors {
+    display: none;
+}
